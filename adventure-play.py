@@ -1,17 +1,25 @@
 import time
+
 import random
 
-#text
+gun = ["sks", "akm", "vss"]
+mapes = ["vickanda","meramar"
 
 
 areas = ["shelter", "airport","oldarea"]
-gun = ["sks", "akm", "vss"]
-evils = ["egypt", "american", "europe";"endin"]
-evil = random.choice(evils) 
-areas = random.choice(areas)
+        
 gun = random.choice(gun)
+        
+mapes= random.choice(mapes) 
+        
+areas = random.choice(areas)
+        
+gun = random.choice(gun)
+        
 def mary(x):
-    print(x) 
+         
+    print(x)
+        
     time.sleep(5) 
 def mystery():
        mystery = input("do you want play again ?\hi"
