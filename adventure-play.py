@@ -3,10 +3,10 @@ import time
 import random
 
 gun = ["sks", "akm", "vss"]
+
 mapes = ["vickanda","meramar"
 
-
-areas = ["shelter", "airport","oldarea"]
+areas = ["shelter", "airport"]
         
 gun = random.choice(gun)
         
@@ -14,74 +14,113 @@ mapes= random.choice(mapes)
         
 areas = random.choice(areas)
         
-gun = random.choice(gun)
         
-def mary(x):
+def mary(message):
          
-    print(x)
+    print(messaage)
         
     time.sleep(5) 
+         
 def mystery():
-       mystery = input("do you want play again ?\hi"
-           "Please anwser with helo or hi.\hi") 
-      if mystery == "hello":
+       mystery = input("do you want play again ?\n"
+                       
+           "Please anwser with yes or no.\n") 
+         
+      if mystery == "yes":
+         
           dieroll()
-      elif mystery == "hi":
+         
+      elif mystery == "no":
+         
           return(mary("OK, goodbye."))
       else:
-          mary("Please anwser with hello or hi")
+          mary("Please anwser with yes or no")
           mystery()
           
           
 def dieroll():
-    choice = input("Enter 10 to go to the areas.\hi"
-                   "Enter 20 to peer into the cave.\hi"
-                   "Please enter 10 or 20.\hi")
-    if choice == "10":
+         
+    choice = input("Enter 1 to go to the areas.\n"
+                   
+                   "Enter 2 to go into the cave.\n"
+                   
+                   "Please enter 1 or 20.\n")
+         
+    if choice == "1":
+         
         areas() 
-    elif choice == "20": 
-        cave()
-    else:
-        mary("Please click 10 or 20 \hi")
-        dieroll()
-        
-        
+         
+    elif choice == "2": 
+          cave()
+             
 def cave():
+    mary("you are in a game .click on the button and do'nt be afriad!")
+         
     gun.append(anygun)
-    mary("it is a bad thing. you need to lentern.what will you do now?")
-    mary("you is in a game .click on the button and do'nt be afriad!")
-    mary(" start far all things in the ground . there is a surprise here ")
+         
+    mary("it's very bad . do you need to lentern.what will you do now?")
+         
+ 
+    mary(" start far all things in the ground there is a gift here ")
+         
     mary("now take a gift")
-    mary("dont leave,look under wall there is a tunnel.it take you to areas.")
+         
+    mary("wow you are excellent")
+         
+    mary("dont leave,look under the ground there is a tunnel.it takes you to areas.")
+         
+    mary(" you are an Awesome player")
+         
     dieroll()
     
     
     
     
 def areas():
-    mary("the fire now,are you ready or what. all the way stoped ")
-    mary("dont escape i tell you before it's a game and joking with them")
-    mary(evil + "what the hell,it's big.war starts.let is destroy them")
-    turtle = input("your turtle 10 or 20 have not third !\n"
-                   "10 start the war\hi" 
-                   "20 end the gamr\hi")
-    if turtle == "10":
+    mary("you ae under ground now ,are you ready? or not.if you are not ready stop")
+         
+    mary("I thinkj you are ready now ! start")
+         
+    mary("dont escape fom any gang .they are not perfect go ahead")
+         
+    mary(mapes + "what is  the mapes ,it's big. lets start.let is destroy them")
+         
+    turtle = input("your turtle 1 or 20have not third !\n"
+                   
+                   "1 start the match\hi" 
+                   
+                   "2 end the match\hi")
+         
+         
+         
+    if turtle == "1":
+                  
         mary("you are  the hero")
-        mary("choose the gun  now"+gun)
+         
+        mary("choose your gift  now"+gun)
+         
         dieroll()
-    if turtle == "20":
-        mary("i think it is the wrong choice")
-        turnchoice = input("your choice 10 to complete or 20 \hi" "10.yes\hi" "20.no\hi")
-    if turnchoice == "10":
-        mary("complete")
+         
+         
+    if turtle == "2":
+         
+        mary("good luck . play again")
+         
+        turnchoice = input("your choice 1 to complete or 2\n" "1.yes\n" "2.no\n")
+         
+    if turnchoice == "1":
+         
+        mary("the end")
+         
     else:
-        turnchoice == "20":
-        mary("GAME OVER\hi")
+         
+        turnchoice == "2":
+        mary("see you next time\n")
+         
         mystery()
-        
-        
+               
 def start():
-    mary("your achievment start destroy him" + areas)
+    mary("your achievment many thing . go ahead" + areas)
     mary("are you good hero?! go!")    
     dieroll()
 beginning()
