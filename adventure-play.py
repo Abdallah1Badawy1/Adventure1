@@ -41,7 +41,7 @@ def dieroll():
 
     choice = input("Enter 1 to go to the areas.\n"
                    "Enter 2 to go into the cave.\n"
-                   "Please enter 1 or 20.\n")
+                   "Please enter 1 or 2.\n")
 
     if choice == "1":
         areas()
@@ -117,4 +117,4 @@ def start():
     mary("are you good hero?! go!")
     mary("excellent work")
     dieroll()
-beginning()
+mary()
