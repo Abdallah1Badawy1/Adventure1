@@ -79,7 +79,7 @@ def areas():
 
     mary("I thinkj you are ready now ! start")
 
-    mary("dont escape fom any gang .they are not perfect go ahead")
+    mary("dont escape fom any gang .they are not perfect . go ahead")
 
     mary(mapes + "what is  the mapes ,it's big. lets start.\n"
          "let is destroy them")
