@@ -117,4 +117,4 @@ def start():
     mary("are you good hero?! go!")
     mary("excellent work")
     dieroll()
-mary()
+start()
